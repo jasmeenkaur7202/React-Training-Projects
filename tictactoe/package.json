@@ -17,6 +17,8 @@
   "license": "MIT",
   "dependencies": {
     "node-sass": "^5.0.0",
+    "raect": "^1.0.4",
+    "rct": "^1.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },

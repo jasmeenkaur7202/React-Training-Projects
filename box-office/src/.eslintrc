@@ -16,6 +16,10 @@
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
       "arrow-body-style": [0], 
-      "prefer-arrow-callback": [0] 
+      "prefer-arrow-callback": [0],
+      "import/no-named-as-default": 0 ,
+      "no-console": "off"
+      // or equivalent
+      // "no-console": [0]
     }
   }

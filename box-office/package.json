@@ -52,5 +52,26 @@
     "eslint-plugin-react-hooks": "^4.0.2",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2"
+  },
+  "babel":{
+    "presets":[
+    "nano-react-app"
+    ],
+    "plugins":[
+    [
+    "@babel/plugin-proposal-class-properties",
+    {
+    "loose":true
+    },
+    "yt1"
+    ],
+    [
+    "@babel/plugin-proposal-private-methods",
+    {
+    "loose":true
+    },
+    "yt2"
+    ]
+    ]
   }
 }

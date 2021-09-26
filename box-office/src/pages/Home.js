@@ -6,7 +6,7 @@ const Home = () => {
   const [input, setInput] = useState('');
   const [results, setResults] = useState(null);
 
-  const onInputChange = ev => {
+  const onInputChange = (ev) => {
     setInput(ev.target.value);
     // console.log(ev.target.value);
   };
@@ -19,8 +19,8 @@ const Home = () => {
     });
   };
 
-  const onKeyDown = ev => {
-    if (ev.keycode === 13) {
+  const onKeyDown = (ev) => {
+    if (ev.keyCode === 13) {
       onSearch();
     }
     // console.log(ev.keycode);
@@ -33,8 +33,8 @@ const Home = () => {
     if (results && results.length > 0) {
       return (
         <div>
-          {results.map(item => (
-            <div key={item.show.id}>{item.show.name}</div> // showNAme is mapped with its unique key value
+          {results.map(item=> (
+            <div key={item.show.id}>{item.show.name}</div>
           ))}
         </div>
       );

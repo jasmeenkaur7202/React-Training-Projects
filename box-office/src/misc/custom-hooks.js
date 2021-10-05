@@ -4,7 +4,7 @@ function showsReducer(prevState, action) {
     switch(action.type){
 
         case 'ADD': {
-            return [...prevState, action.show.Id]
+            return [...prevState, action.showId]
         }
         case 'REMOVE': {
             return prevState.filter( (showId) => showId !== action.showId);
@@ -20,7 +20,7 @@ function usePersistedReducer(reducer, initialState, key) {
     });
 
     useEffect(() => {
-        localStorage.getItem(key, JSON.stringify(state));
+        localStorage.setItem(key, JSON.stringify(state));
     }, [state, key]);
 
     return [state, dispatch];

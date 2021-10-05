@@ -13,7 +13,7 @@ const Home = () => {
 
   const onInputChange = ev => {
     setInput(ev.target.value);
-    // console.log(ev.tasetrget.value);
+    // console.log(ev.target.value);
   };
   const onSearch = () => {
     // https://api.tvmaze.com/search/shows?q=men ---------> api link
